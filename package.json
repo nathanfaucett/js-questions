@@ -1,0 +1,44 @@
+{
+  "name": "@nathanfaucett/questions",
+  "version": "0.0.1",
+  "description": "questions generator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanfaucett/js-questions.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm run test-node",
+    "test-node": "node ./test | ./node_modules/.bin/tap-spec",
+    "test-node-raw": "node ./test",
+    "test-browser-local": "zuul --local 9999 --ui tape -- ./test"
+  },
+  "keywords": [
+    "questions",
+    "questions.js"
+  ],
+  "author": "Nathan Faucett",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "@nathanfaucett/task": "^0.0.8",
+    "gulp-jsbeautifier": "^2.1.0",
+    "gulp-jshint": "^2.0.4",
+    "jshint": "^2.9.4",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3",
+    "zuul": "^3.11.1"
+  },
+  "dependencies": {
+    "@nathanfaucett/array-for_each": "^0.0.1",
+    "@nathanfaucett/array-map": "^0.0.1",
+    "@nathanfaucett/extend": "^0.0.2",
+    "@nathanfaucett/has": "^0.0.2",
+    "@nathanfaucett/is_array": "^0.0.1",
+    "@nathanfaucett/is_boolean": "^0.0.1",
+    "@nathanfaucett/is_function": "^0.0.1",
+    "@nathanfaucett/is_number": "^0.0.1",
+    "@nathanfaucett/is_undefined": "^0.0.1",
+    "@nathanfaucett/pseudo_random": "^0.0.2"
+  }
+}
