@@ -86,6 +86,9 @@ function createQuestion(options) {
             value.answer = validBoolean(options.answer, "answer");
             break;
         case Types.INPUT:
+            if (options.inputType) {
+                value.inputType = options.inputType;
+            }
             value.check = validFunction(options.check, "check");
             break;
     }
