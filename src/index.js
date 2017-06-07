@@ -113,8 +113,8 @@ function getKeysValues(value, options, seed) {
 }
 
 function validExplain(explain) {
-    if (!isArray(explain) || explain.length === 0) {
-        throw new Error("createQuestion(options) options.explain can not be empty");
+    if (!isArray(explain)) {
+        throw new Error("createQuestion(options) options.explain must be an array");
     }
 
     arrayForEach(explain, function each(step, index) {
